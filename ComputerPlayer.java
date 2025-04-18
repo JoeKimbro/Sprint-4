@@ -16,10 +16,9 @@ public class ComputerPlayer extends Player {
         this.random = new Random();
         this.selectedLetter = 'S'; 
         
+        // Only disable the buttons, don't hide them
         sButton.setEnabled(false);
-        sButton.setVisible(false);
         oButton.setEnabled(false);
-        oButton.setVisible(false);
     }
 
     @Override

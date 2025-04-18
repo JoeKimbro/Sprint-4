@@ -91,15 +91,27 @@ public class GameController {
         
         if (blueIsComputer) {
             bluePlayer = new ComputerPlayer("Blue Computer", "Blue", blueS, blueO);
+            blueS.setVisible(false);
+            blueO.setVisible(false);
         } else {
             bluePlayer = new HumanPlayer("Blue Player", "Blue", blueS, blueO);
+            blueS.setVisible(true);
+            blueO.setVisible(true);
+            blueS.setEnabled(true);
+            blueO.setEnabled(true);
         }
         bluePlayer.setSelectedLetter(blueSelectedLetter);
         
         if (redIsComputer) {
             redPlayer = new ComputerPlayer("Red Computer", "Red", redS, redO);
+            redS.setVisible(false);
+            redO.setVisible(false);
         } else {
             redPlayer = new HumanPlayer("Red Player", "Red", redS, redO);
+            redS.setVisible(true);
+            redO.setVisible(true);
+            redS.setEnabled(true);
+            redO.setEnabled(true);
         }
         redPlayer.setSelectedLetter(redSelectedLetter);
         
